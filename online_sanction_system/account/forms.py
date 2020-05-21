@@ -49,8 +49,6 @@ class reimbursementFormforSecretary(ModelForm):
         if approval=='not approved' and not reason_for_disapproval:
             msg=forms.ValidationError("This field is required!")
             self.add_error('reason_for_disapproval',msg)
-        else:
-            self.cleaned_data['reason_for_disapproval']=''
         return self.cleaned_data
 
 class reimbursementFormforCCS_CTS(ModelForm):
@@ -63,8 +61,6 @@ class reimbursementFormforCCS_CTS(ModelForm):
         if approval=='not approved' and not reason_for_disapproval:
             msg=forms.ValidationError("This field is required!")
             self.add_error('reason_for_disapproval',msg)
-        else:
-            self.cleaned_data['reason_for_disapproval']=''
         return self.cleaned_data
 
 class reimbursementFormforOI(ModelForm):
@@ -77,8 +73,6 @@ class reimbursementFormforOI(ModelForm):
         if approval=='not approved' and not reason_for_disapproval:
             msg=forms.ValidationError("This field is required!")
             self.add_error('reason_for_disapproval',msg)
-        else:
-            self.cleaned_data['reason_for_disapproval']=''
         return self.cleaned_data
 
 class reimbursementFormforCA(ModelForm):
@@ -91,9 +85,7 @@ class reimbursementFormforCA(ModelForm):
         if approval=='not approved' and not reason_for_disapproval:
             msg=forms.ValidationError("This field is required!")
             self.add_error('reason_for_disapproval',msg)
-        else:
-            self.cleaned_data['reason_for_disapproval']=''
-        return self.cleaned_data
+       return self.cleaned_data
 
 class reimbursementFormforDA(ModelForm):
     class Meta:
@@ -105,9 +97,7 @@ class reimbursementFormforDA(ModelForm):
         if approval=='not approved' and not reason_for_disapproval:
             msg=forms.ValidationError("This field is required!")
             self.add_error('reason_for_disapproval',msg)
-        else:
-            self.cleaned_data['reason_for_disapproval']=''
-        return self.cleaned_data
+         return self.cleaned_data
 
 class reimbursementFormforDSA(ModelForm):
     class Meta:
@@ -119,8 +109,6 @@ class reimbursementFormforDSA(ModelForm):
         if approval=='not approved' and not reason_for_disapproval:
             msg=forms.ValidationError("This field is required!")
             self.add_error('reason_for_disapproval',msg)
-        else:
-            self.cleaned_data['reason_for_disapproval']=''
         return self.cleaned_data
 
 class lab_Form(ModelForm):
@@ -209,8 +197,6 @@ class labFormforDA(ModelForm):
         if approval=='not approved' and not reason_for_disapproval:
             msg=forms.ValidationError("This field is required!")
             self.add_error('reason_for_disapproval',msg)
-        else:
-            self.cleaned_data['reason_for_disapproval']=''
         return self.cleaned_data
 
 class labFormforDSA(ModelForm):
@@ -223,9 +209,7 @@ class labFormforDSA(ModelForm):
         if approval=='not approved' and not reason_for_disapproval:
             msg=forms.ValidationError("This field is required!")
             self.add_error('reason_for_disapproval',msg)
-        else:
-            self.cleaned_data['reason_for_disapproval']=''
-        return self.cleaned_data
+       return self.cleaned_data
 
 class event_detail_Form(ModelForm):
     class Meta:
@@ -262,8 +246,6 @@ class eventFormforCCS_CTS(ModelForm):
         if approval=='not approved' and not reason_for_disapproval:
             msg=forms.ValidationError("This field is required!")
             self.add_error('reason_for_disapproval',msg)
-        else:
-            self.cleaned_data['reason_for_disapproval']=''
         return self.cleaned_data
 
 class eventFormforAll(ModelForm):
@@ -281,8 +263,6 @@ class eventFormforOI(ModelForm):
         if approval=='not approved' and not reason_for_disapproval:
             msg=forms.ValidationError("This field is required!")
             self.add_error('reason_for_disapproval',msg)
-        else:
-            self.cleaned_data['reason_for_disapproval']=''
         return self.cleaned_data
 
 class eventFormforCA(ModelForm):
@@ -295,8 +275,6 @@ class eventFormforCA(ModelForm):
         if approval=='not approved' and not reason_for_disapproval:
             msg=forms.ValidationError("This field is required!")
             self.add_error('reason_for_disapproval',msg)
-        else:
-            self.cleaned_data['reason_for_disapproval']=''
         return self.cleaned_data
 
 class eventFormforDA(ModelForm):
@@ -309,9 +287,7 @@ class eventFormforDA(ModelForm):
         if approval=='not approved' and not reason_for_disapproval:
             msg=forms.ValidationError("This field is required!")
             self.add_error('reason_for_disapproval',msg)
-        else:
-            self.cleaned_data['reason_for_disapproval']=''
-        return self.cleaned_data
+         return self.cleaned_data
 
 class eventFormforDSA(ModelForm):
     class Meta:
@@ -323,8 +299,6 @@ class eventFormforDSA(ModelForm):
         if approval=='not approved' and not reason_for_disapproval:
             msg=forms.ValidationError("This field is required!")
             self.add_error('reason_for_disapproval',msg)
-        else:
-            self.cleaned_data['reason_for_disapproval']=''
         return self.cleaned_data
 
 
@@ -364,8 +338,6 @@ class auditoriumFormforOI(ModelForm):
         if approval=='not approved' and not reason_for_disapproval:
             msg=forms.ValidationError("This field is required!")
             self.add_error('reason_for_disapproval',msg)
-        else:
-            self.cleaned_data['reason_for_disapproval']=''
         return self.cleaned_data
 
 class auditoriumFormforCDGC(ModelForm):
@@ -378,8 +350,6 @@ class auditoriumFormforCDGC(ModelForm):
         if approval=='not approved' and not reason_for_disapproval:
             msg=forms.ValidationError("This field is required!")
             self.add_error('reason_for_disapproval',msg)
-        else:
-            self.cleaned_data['reason_for_disapproval']=''
         return self.cleaned_data
 
 class auditoriumFormforDA(ModelForm):
@@ -392,8 +362,6 @@ class auditoriumFormforDA(ModelForm):
         if approval=='not approved' and not reason_for_disapproval:
             msg=forms.ValidationError("This field is required!")
             self.add_error('reason_for_disapproval',msg)
-        else:
-            self.cleaned_data['reason_for_disapproval']=''
         return self.cleaned_data
 
 class auditoriumFormforDSA(ModelForm):
@@ -406,8 +374,6 @@ class auditoriumFormforDSA(ModelForm):
         if approval=='not approved' and not reason_for_disapproval:
             msg=forms.ValidationError("This field is required!")
             self.add_error('reason_for_disapproval',msg)
-        else:
-            self.cleaned_data['reason_for_disapproval']=''
         return self.cleaned_data
 
 class lectureHallForm(ModelForm):
@@ -473,8 +439,6 @@ class lectureHallFormForOI(ModelForm):
         if approval=='not approved' and not reason_for_disapproval:
             msg=forms.ValidationError("This field is required!")
             self.add_error('reason_for_disapproval',msg)
-        else:
-            self.cleaned_data['reason_for_disapproval']=''
         return self.cleaned_data
 
 class lectureHallFormForOISecurity(ModelForm):
@@ -487,8 +451,6 @@ class lectureHallFormForOISecurity(ModelForm):
         if approval=='not approved' and not reason_for_disapproval:
             msg=forms.ValidationError("This field is required!")
             self.add_error('reason_for_disapproval',msg)
-        else:
-            self.cleaned_data['reason_for_disapproval']=''
         return self.cleaned_data
 
 
